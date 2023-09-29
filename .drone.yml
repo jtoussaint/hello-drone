@@ -1,0 +1,9 @@
+kind: pipeline
+type: docker
+name: hello
+
+steps:
+  - name: mirror
+    image: ubuntu:22.04
+    commands:
+      - echo "hello world"
